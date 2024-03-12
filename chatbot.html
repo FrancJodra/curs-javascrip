@@ -10,11 +10,12 @@
        const TEMA = "go";
        var edat = 0;
        var matriculat = false;
-       var edat = parseInt(prompt("Quina edat tens?"));
-
-       prompt("Estas matriculat?");
+       edat = parseInt(prompt("Quina edat tens?"));
+       matriculatText = prompt("Estas matriculat?");
        var nom = prompt("Com et dius");
-       var assignatura = prompt("Hola " + nom + " que estàs estudiant?");       
+       var assignatura = prompt("Hola " + nom + " que estàs estudiant?");  
+       
+       matriculat = (matriculat.toLowerCase =="si") ? true : false ;
     //estructura condicional
     if((assignatura.toLowerCase == TEMA) || ((edat >= 16) && (matriculat === "true"))){
         document.write("Molt bé " + nom + "!!! Segur que ets el/la millor" +
